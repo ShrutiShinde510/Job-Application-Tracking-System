@@ -1,0 +1,109 @@
+.otp-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.otp-inputs {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.otp-input {
+  width: 50px;
+  height: 56px;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  outline: none;
+  transition: all 0.2s;
+  color: #1a202c;
+}
+
+.otp-input:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+  transform: scale(1.05);
+}
+
+.otp-input-error {
+  border-color: #e53e3e;
+  animation: shake 0.3s;
+}
+
+.otp-input-success {
+  border-color: #38a169;
+}
+
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-5px); }
+  75% { transform: translateX(5px); }
+}
+
+.success-message {
+  color: #38a169;
+  font-size: 14px;
+  text-align: center;
+  padding: 12px;
+  background: #f0fff4;
+  border-radius: 8px;
+  border: 1px solid #9ae6b4;
+}
+
+.otp-resend {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.resend-timer {
+  color: #718096;
+  font-size: 14px;
+}
+
+.resend-timer strong {
+  color: #667eea;
+}
+
+.resend-link {
+  color: #718096;
+  font-size: 14px;
+}
+
+.resend-link span {
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.resend-link span:hover {
+  text-decoration: underline;
+}
+
+.btn-primary:disabled {
+  background: #cbd5e0;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.btn-primary:disabled:hover {
+  transform: none;
+  box-shadow: none;
+}
+
+@media (max-width: 640px) {
+  .otp-inputs {
+    gap: 8px;
+  }
+
+  .otp-input {
+    width: 42px;
+    height: 48px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,140 @@
+.view-modal {
+    background: white;
+    border-radius: 16px;
+    max-width: 600px;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    animation: slideUp 0.3s ease;
+}
+
+.view-header {
+    padding: 32px 32px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.view-logo {
+    width: 80px;
+    height: 80px;
+    background: #f3f4f6;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+}
+
+.view-content {
+    padding: 24px 32px 32px;
+}
+
+.view-company {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a202c;
+    margin-bottom: 8px;
+}
+
+.view-position {
+    font-size: 18px;
+    color: #6b7280;
+    margin-bottom: 16px;
+}
+
+.view-status {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 32px;
+}
+
+.view-details {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.detail-item {
+    display: flex;
+    gap: 16px;
+    color: #667eea;
+}
+
+.detail-item>div {
+    flex: 1;
+}
+
+.detail-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #6b7280;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 4px;
+}
+
+.detail-value {
+    display: block;
+    font-size: 16px;
+    color: #1a202c;
+    font-weight: 500;
+}
+
+.detail-link {
+    display: inline-block;
+    font-size: 15px;
+    color: #667eea;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s;
+}
+
+.detail-link:hover {
+    color: #5568d3;
+    text-decoration: underline;
+}
+
+.detail-item.notes {
+    align-items: flex-start;
+}
+
+.detail-notes {
+    font-size: 15px;
+    color: #374151;
+    line-height: 1.6;
+    margin: 0;
+    white-space: pre-wrap;
+}
+
+@media (max-width: 640px) {
+    .view-modal {
+        margin: 20px;
+    }
+
+    .view-header {
+        padding: 24px 24px 0;
+    }
+
+    .view-content {
+        padding: 20px 24px 24px;
+    }
+
+    .view-logo {
+        width: 64px;
+        height: 64px;
+        font-size: 32px;
+    }
+
+    .view-company {
+        font-size: 24px;
+    }
+
+    .view-position {
+        font-size: 16px;
+    }
+}
